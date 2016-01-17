@@ -1,0 +1,97 @@
+.container{height:100%;position:fixed;z-index:-10;}
+body{overflow:hidden;}
+/* nav */
+#block-nav { width:300px; height:100%; background-color:#333; position:absolute;color:white; }
+#block-nav a{padding:0 25px; font-size:14px; line-height:52px; cursor:pointer; z-index: 1; color:white;}
+#block-nav a:hover{color:#999;}
+#logo{display: inline-block;}
+ul.img_list{}
+ul.img_list li{text-align:center;margin:30px 0px;}
+ul.img_list li img{ cursor:pointer}
+/* page */
+.main{ height:100%; background:url(../images/bg.jpg);position:fixed;left:300px; top:0px;right:0px; text-align: center;z-index:-5;overflow:hidden;}
+.Page{ position:absolute; margin:0 auto; width:100%; min-width:1000px;}
+#Logo {height:180px; width:200px; display:inline-block; }
+#title       {height:auto; width:300px; display:inline-block;  color:#555;font-size: 50px;border:2px solid #555; border-width:2px 0px 2px 0px;}
+#page0{ top:130px;}
+#page1{ top:1000px;}
+#introBlock1{font-size:24px;margin:0 auto}
+#introBlock2{font-size:18px;color:#FFF;margin:0 auto;display:none}
+.intro{background:#1abc9c;
+filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;}
+#myPhoto {height:160px; width:160px; display:inline-block; }
+
+#page2{ top:1000px;}
+#skillBlock{font-size:22px;color:#444;margin:0 auto}
+.keywords{font-size:30px;color:#FF6969;padding:10px;display:none}
+
+#page3{ top:1000px;}
+#experBlock1{font-size:22px;color:#444;height:500px; margin:0 250px;overflow:hidden;}
+#experBlock2{font-size:22px;color:#444;height:500px; margin:0 250px;overflow:hidden;display:none}
+#experBlock3{font-size:22px;color:#444;height:500px; margin:0 250px;overflow:hidden;display:none}
+.timeline{position:absolute;top:100px;width:1000px;height:50px;z-index:1}
+.line{position:absolute;top:100px;background:#1abc9c;height:3px;width:0px;}
+.rline{position:absolute;top:100px;background:#FF6969;height:3px;width:0px;}
+.dline{position:absolute;top:100px;background:#1abc9c;height:3px;width:0px;}
+#line1{left:0px;}
+#line2{left:155px;}
+#line3{left:305px;}
+#line4{left:455px;}
+#line5{left:0px;}
+#line6{left:205px;}
+#line7{left:355px;}
+#line8{left:0px;}
+#line9{left:155px;}
+#line10{left:305px;}
+#line11{left:455px;}
+ins{width:150px;font-size:16px;}
+.point{position:absolute;-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px; width:10px;height:10px;background:#fff;border:3px dashed #1abc9c;top:95px;z-index:5;cursor:pointer ;display:none}
+	.rpoint{position:absolute;-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px; width:10px;height:10px;background:#fff;border:3px dashed #FF6969;top:95px;z-index:5;cursor:pointer ;display:none}
+.dpoint{position:absolute;-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px; width:10px;height:10px;background:#fff;border:3px dashed #1abc9c;top:95px;z-index:5;cursor:pointer ;display:none}	
+#point1{left:145px;}
+#point2{left:295px;}
+#point3{left:445px;}
+#point4{left:195px;}
+#point5{left:395px;}
+#point6{left:145px;}
+#point7{left:295px;}
+#point8{left:445px;}
+.market{font-size:16px;position:absolute;width:150px;font-weight:550;display:none}
+#market1{left:80px;top:150px;}
+#market2{left:230px;top:20px;}
+#market3{left:380px;top:130px;}
+.rmarket{font-size:16px;position:absolute;width:150px;font-weight:550;display:none}
+#market4{left:130px;top:20px;}
+#market5{left:330px;top:130px;}
+.dmarket{font-size:16px;position:absolute;width:150px;font-weight:550;display:none}
+#market6{left:80px;top:150px;}
+#market7{left:230px;top:20px;}
+#market8{left:380px;top:130px;}
+#picBtn {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    text-align: center;
+	font-size:8px
+}
+.pp{
+	background:#aaa;
+	-moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius:8px; width:8px;height:8px;
+	cursor:pointer;
+}
+.on{background:#777}
+#page4{ top:1000px;}
+#page4 ul{margin:150px 230px;width:600px}
+#page4 img{cursor:pointer}
+#page4 p{font-size:18px;font-family:Arial, Helvetica, sans-serif;font-weight:500;color:#333}
