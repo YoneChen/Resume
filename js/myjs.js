@@ -2,7 +2,7 @@ function pageAnimate(PageA,PageB,CALLBACK){//页面滑动
 		if(PageB!=PageA){
 		$(PageB).animate({top:'-500px'},'middle',function(){
 			$(PageB).hide();
-			$(PageB).animate({top:'1000px'});
+			$(PageB).animate({top:'2000px'});
 		});
 			$(PageA).show();
 			$(PageA).animate({top:'130px'},'middle',CALLBACK);
