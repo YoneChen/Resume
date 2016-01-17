@@ -14,7 +14,7 @@ ul.img_list li img{ cursor:pointer}
 #Logo {height:180px; width:200px; display:inline-block; }
 #title       {height:auto; width:300px; display:inline-block;  color:#555;font-size: 50px;border:2px solid #555; border-width:2px 0px 2px 0px;}
 #page0{ top:130px;}
-#page1{ top:1000px;}
+#page1{ top:2000px;}
 #introBlock1{font-size:24px;margin:0 auto}
 #introBlock2{font-size:18px;color:#FFF;margin:0 auto;display:none}
 .intro{background:#1abc9c;
@@ -24,11 +24,11 @@ filter:alpha(opacity=80);
 	opacity: 0.8;}
 #myPhoto {height:160px; width:160px; display:inline-block; }
 
-#page2{ top:1000px;}
+#page2{ top:2000px;}
 #skillBlock{font-size:22px;color:#444;margin:0 auto}
 .keywords{font-size:30px;color:#FF6969;padding:10px;display:none}
 
-#page3{ top:1000px;}
+#page3{ top:2000px;}
 #experBlock1{font-size:22px;color:#444;height:500px; margin:0 250px;overflow:hidden;}
 #experBlock2{font-size:22px;color:#444;height:500px; margin:0 250px;overflow:hidden;display:none}
 #experBlock3{font-size:22px;color:#444;height:500px; margin:0 250px;overflow:hidden;display:none}
@@ -91,7 +91,7 @@ ins{width:150px;font-size:16px;}
 	cursor:pointer;
 }
 .on{background:#777}
-#page4{ top:1000px;}
+#page4{ top:2000px;}
 #page4 ul{margin:150px 230px;width:600px}
 #page4 img{cursor:pointer}
 #page4 p{font-size:18px;font-family:Arial, Helvetica, sans-serif;font-weight:500;color:#333}
