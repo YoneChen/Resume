@@ -1,7 +1,7 @@
 .container{height:100%;position:fixed;z-index:-10;}
 body{overflow:hidden;}
 header{position:fixed;top:0px;height:60px;width:100%;background-color:#333;display:none}
-header h2{color:#fff;font-size:20px;margin-left:25px}
+header ._title{color:#fff;font-size:20px;margin-left:20px;line-height:50px}
 /* nav */
 #block-nav { width:300px; height:100%; background-color:#333; position:absolute;color:white; }
 #logo{display: inline-block;}
