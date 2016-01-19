@@ -1,5 +1,6 @@
 .container{height:100%;position:fixed;z-index:-10;}
 body{overflow:hidden;}
+header{position:fixed;top:0px;height:60px;width:100%;background-color:#333;display:none}
 /* nav */
 #block-nav { width:300px; height:100%; background-color:#333; position:absolute;color:white; }
 #logo{display: inline-block;}
@@ -8,7 +9,7 @@ ul.img_list li{text-align:center;margin:30px 0px;}
 ul.img_list li img{ cursor:pointer}
 /* page */
 .main{ height:100%; background:url(../images/bg.jpg);position:fixed;left:300px; top:0px;right:0px; text-align: center;z-index:-5;overflow:hidden;min-height:500px}
-.Page{ position:absolute; margin:0 auto 100px auto; width:100%; min-width:380px;}
+.Page{ position:absolute; margin:30px auto 100px auto; width:100%; min-width:380px;}
 #Logo {height:180px; width:200px; display:inline-block; }
 #title       {height:auto; width:300px; display:inline-block;  color:#555;font-size: 50px;border:2px solid #555; border-width:2px 0px 2px 0px;}
 #page0{ top:20%;}
@@ -82,9 +83,10 @@ ins{width:150px;font-size:16px;}
 #page4 img{cursor:pointer}
 #page4 p{font-size:18px;font-family:Arial, Helvetica, sans-serif;font-weight:500;color:#333}
 
-#bottom-nav{position:fixed;bottom:0px;height:70px;width:100%;background-color:#333;display:none}
-#bottom-nav ul{list-style:none;line-height:70px}
+#bottom-nav{position:fixed;bottom:0px;height:60px;width:100%;background-color:#333;display:none}
+#bottom-nav ul{list-style:none;line-height:60px}
 
 #bottom-nav ul li{float:left;width:25%;text-align:center;color:#fff;font-family:Arial, Helvetica, sans-serif;cursor:pointer ;font-size:15px}
 #bottom-nav ul li:hover{background:#222 }
 @media screen and (max-width: 920px) {#block-nav {display:none;}#bottom-nav {display:block;} .main{left:0px;}}
+@media screen and (max-width: 480px) {h3{display:none}header{display:block}}
