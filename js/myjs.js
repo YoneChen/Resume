@@ -31,9 +31,7 @@ function Pageanimate3(){}
 function Pageanimate4(){}	
 
 $(document).ready(function(e) {
-	$("#introBlock1").bind("swiperight",function(){
-       alert();
-    });
+	
 	$(".point").hide();
 	$(".line").css({width:'0px'});
 	 $(function () { $("[data-toggle='tooltip']").tooltip(); });
