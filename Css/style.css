@@ -53,14 +53,14 @@ ins{width:150px;font-size:16px;}
 	top:7px;margin:0 -10px;
 	cursor:pointer ;display:inline-block}
 .market{font-size:13px;position:relative;width:150px;font-weight:550;display:none;}
-#market1{right:15%;top:22%;}
-#market2{top:-15%;}
-#market3{left:15%;top:0%;}
-#market4{right:10%;top:-5%;}
-#market5{left:10%;top:5%;}
-#market6{right:15%;top:22%;}
-#market7{top:-15%;}
-#market8{left:15%;top:0%;}
+#market1{right:5%;}
+#market2{}
+#market3{left:5%;}
+#market4{right:5%;}
+#market5{left:5%;}
+#market6{right:5%;}
+#market7{top:0%;}
+#market8{left:5%;}
 #picBtn {
     position: absolute;
     top: 400px;
@@ -89,12 +89,5 @@ ins{width:150px;font-size:16px;}
 #bottom-nav ul li:hover{background:#222 }
 @media screen and (max-width: 920px) {#block-nav {display:none;}#bottom-nav {display:block;} .main{left:0px;}}
 @media screen and (max-width: 480px) {h3{display:none}header{display:block}.market{font-size:11px;}
-#market1{right:18%;top:35%;}
-#market2{top:0%;}
-#market3{left:18%;top:15%;}
-#market4{top:10%;}
-#market5{top:15%;}
-#market6{right:18%;top:35%;}
-#market7{top:0%;}
-#market8{left:18%;top:15%;}
+
 }
