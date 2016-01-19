@@ -9,7 +9,7 @@ ul.img_list{}
 ul.img_list li{text-align:center;margin:30px 0px;}
 ul.img_list li img{ cursor:pointer}
 /* page */
-.main{ height:100%; background:url(../images/bg.jpg);position:fixed;left:300px; top:0px;right:0px; text-align: center;z-index:-5;overflow:hidden;min-height:500px}
+.main{ height:100%; background:url(../images/bg.png);position:fixed;left:300px; top:0px;right:0px; text-align: center;z-index:-5;overflow:hidden;min-height:500px}
 .Page{ position:absolute; margin:30px auto 100px auto; width:100%; min-width:380px;}
 #Logo {height:180px; width:200px; display:inline-block; }
 #title       {height:auto; width:300px; display:inline-block;  color:#555;font-size: 50px;border:2px solid #555; border-width:2px 0px 2px 0px;}
