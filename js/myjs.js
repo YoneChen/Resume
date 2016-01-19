@@ -5,7 +5,7 @@ function pageAnimate(PageA,PageB,CALLBACK){//页面滑动
 			$(PageB).animate({top:'1000px'});
 		});
 			$(PageA).show();
-			$(PageA).animate({top:'0px'},'middle',CALLBACK);
+			$(PageA).animate({top:'130px'},'middle',CALLBACK);
 		}
 		
 	}
