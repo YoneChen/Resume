@@ -5,7 +5,6 @@ body, html {
 
 body {
     position: relative;
-    overflow-x: hidden;
 }
 /*nav{display: none}*/
 /*section{display: none}*/
@@ -58,6 +57,7 @@ ul.img_list li img {
     height: 100%;
     min-width: 300px;
     background-color: #333;
+    overflow-x: hidden;
 }
 
 #Logo {
@@ -98,6 +98,7 @@ ul.img_list li img {
     padding-top: 120px;
     color: #eee;
     min-height: 400px;
+    overflow-x: hidden;
 }
 
 #page1 p {
