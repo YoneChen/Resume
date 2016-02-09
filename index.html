@@ -1,169 +1,219 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="Css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="Css/reset.css"/>
-<link rel="stylesheet" type="text/css" href="Css/style.css"/>
-<title>陈昱宏个人简历</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="Css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="Css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="Css/animate.css"/>
+    <title>陈昱宏个人简历</title>
 </head>
-<body>
-<div class='container'>
-<header ><span class="_title">YorkChan</span></header>
-<nav id="block-nav" >
- <ul class="img_list">
-            <li><img width="80" height="80" src="images/icon2.png" /><p>Introduce</p></li>
-            <li><img width="80" height="80" src="images/icon2.png" /><p>Skills</p></li>
-            <li><img width="80" height="80" src="images/icon2.png" /><p>Experience</p></li>
-            <li><img width="80" height="80" src="images/icon2.png" /><p>More</p></li>
- </ul>
-	</nav>
-<div class="main" >
-<div id="page0" class="Page" >
-		<img id="Logo" src="images/logo.png">
-        <br/><br/>
-        <span id="title">Welcome</span>
-        </div>
-<div id="page1" class="Page" >
-		
-        <div id="introBlock1">
-        <img id="myPhoto" src="images/YorkChan.png">
-        <br/><br/>
-        <p>姓名：陈昱宏</p>
-<p>英文名：YorkChan</p>
-<p>学校：广东外语外贸大学</p>
-<p>专业：计算机科学与技术</p>
-</div>
-
-<div id="introBlock2">
-        
-        <div class='intro'><br/>
-        <h3>我的简介</h3><br/>
-        <p>水瓶IT男，既有独特艺术细胞，又有活跃的思维方式
-</p><br/>
-<p>有较好的自学能力、沟通能力和团队协作精神</p><br/>
-<p>Geek精神，爱玩各种插件，喜欢互联网最新资讯</p><br/>
-<p>有较好的后台开发经验，有一定的前端设计能力</p><br/>
-<p>其它技能：英语六级、画画、书法</p><br/><br/>
-</div>
-</div>
-<div id="picBtn">
-					<!-- 图片要放在images/about文件夹中 -->
-					<span id="page1_p1" class="pp on" >&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<span id="page1_p2" class="pp">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<!--<i>2</i>!-->
-				</div>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="200">
+<!--<div class="FullScreen">-->
+    <!--<div class="Block">-->
+        <!--<img id="Logo" src="images/logo.png">-->
+        <!--<br/><br/>-->
+        <!--<span id="title">Welcome</span>-->
+    <!--</div>-->
+<!--</div>-->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-example">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">YorkChan</a>
         </div>
 
-<div id="page2" class="Page">
-        <div id="skillBlock">
-		<h3 style="font-size:36px">Skill</h3><br/><br/>
-        <p>CSS3 HTML5 <span class="keywords" >Javascript</span> Ajax</p>
-        <p> Prototype<span class="keywords" >Jquery </span>Bootstrap Less</p>
-<p>SQL <span class="keywords" >Asp.net</span>MVC</p>
-<p>Java<span class="keywords" >C#</span> php PhotoShop</p>
-</div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#page1">About</a></li>
+                <li><a href="#page2">Skill</a></li>
+                <li><a href="#page3">Experience</a></li>
+                <li><a href="#page4">More</a></li>
+                <li><a href="#page5">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section id="page1" class="Page">
+
+    <div class="Block box" style="">
+        <div class="row">
+            <div class="col-md-12 "><img class="animated shake" id="myPhoto" src="images/YorkChan.png">
+            </div>
         </div>
-        
-<div id="page3" class="Page">
-        <div id="experBlock1">
-		<h4 style="font-size:38px">项目实践</h4><br/><br/><br/>
-        <span class="market" id="market1">广外人事处管理系统</span>
-<span class="market" id="market2">新闻搜索引擎</span>
-<span class="market" id="market3">中科院台风灾害损失评估系统</span>
-        <div class='timeline'>
-        <div id="line1" class="line"></div>
-        <a href="#" class="point" id="point1" data-toggle="tooltip" data-placement="top" 
-   title=" 教职员信息的CRUD业务开发，该项目获得国家软件著作权"></a>
-<div id="line2" class="line"></div>
-        <a href="#" class="point" id="point2" data-toggle="tooltip" data-placement="bottom" 
-   title="负责MVC框架搭建，JQuery Css开发网页前端"></a>
-         <div id="line3" class="line"></div>
-        <a href="#" class="point" id="point3" data-toggle="tooltip" data-placement="top" 
-   title="调用百度地图API，实现首页前端交互，获得国家软件著作权"></a>
-        <div id="line4" class="line"></div>
+        <div class="row">
+            <br/>
+            <article style="text-align: center">
+                <p class="animated slideInLeft"><br/>Hello~我是陈昱宏，英文名York Chan
+                </p><br/>
+                <p class="animated slideInRight">一个期望成为Web开发攻城狮的前端爱好者</p><br/>
+                <p class="animated slideInLeft">一只来自广东外语外贸大学计算机专业的应届生</p><br/>
+                <p class="animated slideInRight">较多的开发经验+较快的自学能力+一颗积极的心</p><br/>
+                <p class="animated slideInLeft">Please take me away！--13580349693--</p><br/>
+            </article>
         </div>
-        <br/><br/><br/>
-<span class="market" id="market1">2013.06</span>
-<span class="market" id="market2">2014.07</span>
-<span class="market" id="market3">2015.07</span>
+    </div>
+</section>
+
+<section id="page2" class="Page">
+    <div class="Block" id="skillBlock">
+        <h3 class="animated shake" style="font-size:36px">Skill</h3>
+        <div class="container" style="padding-top: 50px">
+            <p class=" animated rollIn">CSS3 HTML5 <span class="keywords">Javascript</span> Ajax</p>
+            <p class=" animated rollIn"> NLPC<span class="keywords">Jquery </span>Bootstrap Less</p>
+            <p class=" animated rollIn">Responsive <span class="keywords">Asp.net</span>MVC</p>
+            <p class=" animated rollIn">Java<span class="keywords">C#</span>Sql PhotoShop</p>
         </div>
-        
-        <div id="experBlock2"style="font-size:38px">
-		<h4 style="font-size:38px">学术经历</h4><br/><br/>
-        <span class="market" id="market4">微博表情符情感倾向性判定</span>
-<span class="market" id="market5">群体舆情分析</span>
-        <div class='timeline'>
-        <div id="line5" class="line"></div>
-        <a href="#" class="point" id="point4" data-toggle="tooltip" data-placement="bottom" 
-   title=" 中国机器学习会议录用论文"></a>
-        <div id="line6" class="line"></div>
-        <a href="#" class="point" id="point5" data-toggle="tooltip" data-placement="top" 
-   title="《计算机应用》收录刊文"></a>
-         <div id="line7" class="line"></div>
-         </div>
-<br/>
-<span class="market" id="market4">2014.12</span>
-<span class="market" id="market5">2015.03</span>
-        </div>
-        
-        <div id="experBlock3">
-		<h4 style="font-size:38px">实习实践</h4><br/><br/><br/>
-<span class="market" id="market6">悟空校园实习</span>
-<span class="market" id="market7">中国自然语言处理会议</span>
-<span class="market" id="market8">广东酷乐网络有限公司实习</span>
-        <div class='timeline'>
-        <div id="line8" class="line"></div>
-        <a href="#" class="point" id="point6" data-toggle="tooltip" data-placement="top" 
-   title=" APP产品后台管理与线上运营"></a>
-        <div id="line9" class="line"></div>
-        <a href="#" class="point" id="point7" data-toggle="tooltip" data-placement="bottom" 
-   title="完成ACL前沿学习班课程"></a>
-         <div id="line10" class="line"></div>
-        <a href="#" class="point" id="point8" data-toggle="tooltip" data-placement="top" 
-   title="前端开发实现公司部分首页交互"></a>
-        <div id="line11" class="line"></div>
-        </div>
-        <br/>
-<br/><br/>
-<span class="market" id="market6">2013.06~2013.09</span>
-<span class="market" id="market7">2014.12</span>
-<span class="market" id="market8">2015.12~2016.02</span>
-        </div>
-        <div id="picBtn">
-					<!-- 图片要放在images/about文件夹中 -->
-					<span id="page3_p1" class="pp on" >&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<span id="page3_p2" class="pp">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span id="page3_p3" class="pp">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<!--<i>2</i>!-->
-				</div>
+    </div>
+</section>
+<section class="Page" id="page3">
+    <div class="Block">
+        <h3 class="animated shake">Experience</h3>
+        <div class="row" style="padding: 50px">
+            <article class="col-md-3 col-sm-6 col-xs-12">
+                <div class="exper-box animated rotateInUpLeft">
+                    <span class="glyphicon glyphicon-user" style="font-size:xx-large"></span>
+                    <h4>广外人事处管理系统</h4>
+                    <p>参与网站后台开发，实现教职工登录注册功能以及个人资料管理功能，掌握B/S系统开发流程。</p>
+                    <p>2013/07--2013/09</p>
                 </div>
-        
-<div id="page4" class="Page">
-<div id="contactBlock">
-<h3 style="font-size:38px;color:#444">联系方式</h3>
-		<ul>
-			<li><img src="images/email.png" alt="word" width="100" height="99"/><br/><br/><p>346769090@qq.com</p></li>
-			<li><img src="images/tel.png" alt="firefox" width="100" height="99" /><br/><br/><p>13580349693</p></li>
-			<li><img src="images/wechat.png" alt="ps" width="100" height="99"/><br/><br/><p>YorkChan94</p></li>
-		</ul>
-        </div>   
-        </div>             
+            </article>
+            <article class="col-md-3 col-sm-6 col-xs-12">
+                <div class="exper-box animated rotateInUpRight">
+                    <span class="glyphicon glyphicon-search" style="font-size:xx-large"></span>
+                    <h4>Jeagle新闻搜索引擎</h4>
+                    <p>实现系统前端开发与MVC框架的搭建，学会运用html5的新特性，熟悉Ajax异步开发技巧。</p>
+                    <p>2014/04--2014/05</p>
+                </div>
+            </article>
+            <article class="col-md-3 col-sm-6 col-xs-12">
+                <div class="exper-box animated rotateInUpRight">
+                    <span class="glyphicon glyphicon-cloud" style="font-size:xx-large"></span>
+                    <h4>中科院台风灾害评估系统</h4>
+                    <p>参与系统首页设计，负责首页前端开发，实现页面交互式动画，掌握Jquery框架与Css3动画。</p>
+                    <p>2015/07--2014/08</p>
+                </div>
+            </article>
+            <article class="col-md-3 col-sm-6 col-xs-12">
+                <div class="exper-box  animated rotateInUpLeft">
+                    <span class="glyphicon glyphicon-briefcase" style="font-size:xx-large"></span>
+                    <h4>广东酷乐网络公司实习</h4>
+                    <p>前端实习生，参与公司商城网站首页的页面开发，掌握Bootstrap框架与响应式网站开发技巧。</p>
+                    <p>2015/12--2016/02</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="Page" id="page4">
+    <div class="Block">
+        <div class="banner">
+            <ul>
+                <li><img src="images/item1.jpg" width="750" height="450"></li>
+                <li><img src="images/item2.jpg" width="750" height="450"></li>
+                <li><img src="images/item3.jpg" width="750" height="450"></li>
+                <li><img src="images/item4.jpg" width="750" height="450"></li>
+                <li><img src="images/item5.jpg" width="750" height="450"></li>
+                <li><img src="images/item6.jpg" width="750" height="450"></li>
+            </ul>
+        </div>
+        <div class="container detail">
+            <div class="row animated slideInLeft">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <div class="myicon glyphicon glyphicon-user "
+                         style="height:auto;width:70px;border-radius:70px;border:solid 2px #fff;font-size:xx-large;z-index: 10;line-height:200%"></div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                    <div class="send"><p>
+                        Geek精神，爱玩各种插件，喜欢互联网最新资讯；有较好的后台开发经验，一定的前端设计能力；既有独特艺术细胞，又有活跃的思维方式；有较好的自学能力、沟通能力和团队协作精神</p>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container detail-sm">
+            <div class="row animated slideInLeft" style="text-align:left">
+                <div class="myicon-pink glyphicon glyphicon-user"></div>
+                <div class="send-sm-left"><p>Geek精神，爱玩各种插件，喜欢互联网最新资讯</p>
+                    <div class="arrow-left"></div>
+                </div>
+            </div>
+            <div class="row animated slideInRight" style="text-align:right">
+                <div class="send-sm-right"><p>有较好的后台开发经验，一定的前端设计能力</p>
+                    <div class="arrow-right"></div>
+                </div>
+                <div class="myicon-white glyphicon glyphicon-user"
+                     style="height:45px;width:45px;border-radius:45px;border:solid 2px #fff;font-size:large;z-index: 10;line-height:200%"></div>
+            </div>
+            <div class="row animated slideInLeft" style="text-align:left">
+                <div class="myicon-pink glyphicon glyphicon-user"></div>
+                <div class="send-sm-left"><p>既有独特艺术细胞，又有活跃的思维方式</p>
+                    <div class="arrow-left"></div>
+                </div>
+            </div>
+            <div class="row animated slideInRight" style="text-align:right">
+                <div class="send-sm-right"><p>有较好的自学能力、沟通能力和团队协作精神</p>
+                    <div class="arrow-right"></div>
+                </div>
+                <div class="myicon-white glyphicon glyphicon-user"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<section id="page5" class="Page">
+    <div class="Block ">
+        <h3 class="animated shake" style="font-size: 28px">Contact</h3>
+        <div class="container">
+            <div class="row">
+                <article class="col-md-3 col-sm-6 col-xs-12 animated rotateIn">
+                    <div class="contact-box">
+                        <span class="glyphicon glyphicon-phone" style="font-size:xx-large"></span>
+                    </div>
+                    <div class="market">mobile:13580349693</div>
+                </article>
+                <article class="col-md-3 col-sm-6 col-xs-12 animated rotateIn">
+                    <div class="contact-box">
+                        <span class="glyphicon glyphicon-envelope" style="font-size:xx-large"></span>
+                    </div>
+                    <div class="market">e-mail:346769090@qq.com</div>
+                </article>
+                <article class="col-md-3 col-sm-6 col-xs-12 animated rotateIn">
+                    <div class="contact-box">
+                        <span class="glyphicon glyphicon-comment" style="font-size:xx-large"></span>
+                    </div>
+                    <div class="market">wechat:YorkChan94</div>
+                </article>
+                <article class="col-md-3 col-sm-6 col-xs-12 animated rotateIn">
+                    <div class="contact-box">
+                        <span class="glyphicon glyphicon-option-horizontal" style="font-size:xx-large"></span>
+                    </div>
+                    <div class="market">github:YorkChan94</div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>copyright @ YorkChan</footer>
+<div class="back-top"><a href="#page1"><span class="glyphicon glyphicon-menu-up" style="font-size:large"></span></a>
 </div>
 
-<nav id="bottom-nav" >
- <ul class="bottom_list">
-            <li>Introduce</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>More</li>
- </ul>
-	</nav>
-  </div>
-  <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.roundabout.js"></script>
-<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="js/jquery-color.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/myjs.js"></script></body>
+<script type="text/javascript" src="js/unslider.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+</body>
 </html>

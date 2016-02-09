@@ -1,84 +1,78 @@
-function pageAnimate(PageA,PageB,CALLBACK){//页面滑动
-		if(PageB!=PageA){
-		$(PageB).animate({top:'-500px'},'middle',function(){
-			$(PageB).hide();
-			$(PageB).animate({top:'1000px'});
-		});
-			$(PageA).show();
-			$(PageA).animate({top:'10%'},'middle',CALLBACK);
-		}
-		
-	}
-function blockAnimate(BlockA,BlockB,CALLBACK){//页面滑动
-		if(BlockA!=BlockB){
-		$(BlockB).fadeOut(function(){$(BlockA).fadeIn(CALLBACK)});
-		}
-	}
-function lineAnimate(Line,Width,Point,CALLBACK){
-		if(Point!=null)
-		$(Line).animate({width:Width},'fast',function(){
-			$(Point).fadeIn('fast',CALLBACK);
-		});
-		else {$(Line).animate({width:Width},'fast',CALLBACK);}
-		
-	}	
-function Pageanimate(i){$('.keywords').stop();$('.keywords').hide();/*$('.line').stop();$('.line').css({width:'0px'});$('.point').stop();$('.point').hide();*/
-/*if(i=='1')$('#introBlock1').rotate3Di(90, 1000,{complete:function(){$('#introBlock1').hide();$('#introBlock2').show();$('#introBlock2').rotate3Di(180, 1000,{complete:function(){}});}});*/
-if(i=='2')$('.keywords').fadeIn(2000);
-if(i=='3')lineAnimate("#line1","15%","#point1",function(){lineAnimate("#line2","15%","#point2",function(){lineAnimate("#line3","15%","#point3",function(){lineAnimate("#line4","15%",null,function(){$('#experBlock1 .market').fadeIn();});});});});
-}	
-function Pageanimate3(){}	
-function Pageanimate4(){}	
-
-$(document).ready(function(e) {
-	
-	$(".point").hide();
-	$(".line").css({width:'0px'});
-	 $(function () { $("[data-toggle='tooltip']").tooltip(); });
-var pre=0;  
-var page1_pre=1;
-var page3_pre=1;
-//$("#introBlock1 a").hover(function(){(this).addClass("up")},function(){});
-$('#page4 ul').roundabout();
-         $("#page1_p1").click(function(){if(page1_pre!=1)$('#page1 .pp').removeClass('on');$(this).addClass('on');blockAnimate("#introBlock1","#introBlock"+page1_pre);page1_pre=1;});
-		 $("#page1_p2").click(function(){if(page1_pre!=2)$('#page1 .pp').removeClass('on');$(this).addClass('on');blockAnimate("#introBlock2","#introBlock"+page1_pre);page1_pre=2;});
-		 
-		 $("#page3_p3").click(function(){if(page3_pre!=3)$('#page3 .pp').removeClass('on');$(this).addClass('on');blockAnimate("#experBlock3","#experBlock"+page3_pre,function(){lineAnimate("#line8",'15%',"#point6",function(){lineAnimate("#line9",'15%',"#point7",function(){lineAnimate("#line10",'15%',"#point8",function(){lineAnimate("#line11",'15%',null,function(){$('#experBlock3 .market').fadeIn();});});});});page3_pre=3;})});
-		 $("#page3_p2").click (function()
-		 {if(page3_pre!=2)
-		   {$('#page3 .pp').removeClass('on');$(this).addClass('on');
-		    blockAnimate("#experBlock2","#experBlock"+page3_pre,function()
-			 {lineAnimate("#line5",'20%',"#point4",function()
-			   {lineAnimate("#line6",'20%',"#point5",function()
-			     {lineAnimate("#line7",'20%',null,function()
-				   {$('#experBlock2 .market').fadeIn();});
-				 });
-			   });
-			 });
-			page3_pre=2;
-		   }
-		 });
-		 $("#page3_p1").click(function(){if(page3_pre!=1)$('#page3 .pp').removeClass('on');$(this).addClass('on');blockAnimate("#experBlock1","#experBlock"+page3_pre,function(){lineAnimate("#line1",'15%',"#point1",function(){lineAnimate("#line2",'15%',"#point2",function(){lineAnimate("#line3",'15%',"#point3",function(){lineAnimate("#line4",'15%',null,function(){$('#experBlock1 .market').fadeIn();});});});});page3_pre=1;})});
-	$("#block-nav img").click(
-		function(){ $("#block-nav img").attr('src','images/icon2.png');$(this).attr('src','images/icon1.png'); var i=$("#block-nav img").index(this)+1; pageAnimate("#page"+i,"#page"+pre,function(){Pageanimate(i);});pre=i;}
-		);
-			$("#bottom-nav li").click(
-		function(){ $("#bottom-nav li").css({'background':'#333','color':'#fff'});$(this).css({'background':'#222','color':'#FF6969'}); var i=$("#bottom-nav li").index(this)+1; pageAnimate("#page"+i,"#page"+pre,function(){Pageanimate(i);});pre=i;}
-		);
-		 $("#block-nav img").rotate({
-        bind: {
-            mouseover: function(){
-                $(this).rotate({
-                    animateTo: 90
-                });
-            },
-            mouseout: function(){
-                $(this).rotate({
-                    animateTo: 0
-                });
-            }
-        }
+$(document).ready(function (e) {
+    //setTimeout(function () {
+    //    $(".FullScreen").hide();
+    //    $("nav,section").show();
+    //    $("#navbar-example").width($(window).width());
+    //    $('#page1 p').show();
+    //}, 3000);
+    $("#navbar-example").width($(window).width());
+    $(window).resize(function () {
+        $("#navbar-example").width($(window).width()); //process here
     });
-	
-});
-	// JavaScript Document
+    $(".exper-box, .back-top").hover(function () {
+            $(this).animate({
+                    backgroundColor: "#00aadd"
+                },
+                300);
+        },
+        function () {
+            $(this).animate({
+                    backgroundColor: "#303030"
+                },
+                300);
+        });
+    $('.banner').unslider({
+        speed: 500,               //  The speed to animate each slide (in milliseconds)
+        delay: 3000,              //  The delay between slide animations (in milliseconds)
+        complete: function () {
+        },  //  A function that gets called after every slide animation
+        keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+        dots: true,               //  Display dot navigation
+        fluid: true              //  Support responsive design. May break non-responsive designs
+    });
+
+
+    //$('[data-spy="scroll"]').each(function () {
+    //    var $spy = $(this).scrollspy('refresh')
+    //});
+    $('#navbar-example').scrollspy();
+    $('#navbar-example').on('activate.bs.scrollspy', function () {
+        var pre = $("#navbar-example li.active > a").text();
+        if (pre != "About") $('.back-top').fadeIn();
+        else $('.back-top').fadeOut();
+        PageAniamtion(pre);
+        // do something…
+    })
+})
+function PageAniamtion(liText) {
+    switch (liText) {
+        case 'About':
+        {
+            $('#page1 p').show();
+            break;
+        }
+        case 'Skill':
+        {
+            $('#page2 h3').show();
+            $('#page2 p').show();
+            break;
+        }
+        case 'Experience':
+        {
+            $('#page3 h3').show();
+            $('#page3 .exper-box').show();
+            break;
+        }
+        case 'More':
+        {
+            $('#page4 .row').show();
+            break;
+        }
+        case 'Contact':
+        {
+            $('#page5 h3').show();
+            $('#page5 article').show();
+            break;
+        }
+    }
+}
