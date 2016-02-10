@@ -1,10 +1,10 @@
 body, html {
     height: 100%;
-    overflow-x: hidden;
 }
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 /*nav{display: none}*/
 /*section{display: none}*/
