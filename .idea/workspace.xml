@@ -55,8 +55,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8104088">
-              <caret line="328" column="32" selection-start-line="328" selection-start-column="32" selection-end-line="328" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.82713753">
+              <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -298,7 +298,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="0" width="1354" height="735" extended-state="1" />
+    <frame x="19" y="0" width="1354" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25261584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -565,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8104088">
-          <caret line="328" column="32" selection-start-line="328" selection-start-column="32" selection-end-line="328" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.82713753">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
           <folding />
         </state>
       </provider>

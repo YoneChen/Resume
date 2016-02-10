@@ -98,7 +98,7 @@ ul.img_list li img {
     padding-top: 120px;
     color: #eee;
     min-height: 400px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #page1 p {
