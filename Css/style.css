@@ -134,7 +134,9 @@ ul.img_list li img {
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-
+#page2 {
+    background-color: #222;
+}
 #page2 p {
     display: none;
 }
@@ -271,7 +273,7 @@ ul.img_list li img {
     font-size: 0;
     border-width: 8px 32px;
     border-style: solid;
-    border-color: #333 #FF6969 #333 #333;
+    border-color: #222 #FF6969 #222 #222;
 }
 .detail .row {
     padding-top: 32px;
@@ -301,7 +303,7 @@ ul.img_list li img {
     font-size: 0;
     border-width: 8px 8px;
     border-style: solid;
-    border-color: #333 #FF6969 #333 #333;
+    border-color: #222 #FF6969 #222 #222;
 }
 
 .send-sm-right {
@@ -324,9 +326,11 @@ ul.img_list li img {
     font-size: 0;
     border-width: 8px 8px;
     border-style: solid;
-    border-color: #333 #333 #333 #fff;
+    border-color: #222 #222 #222 #fff;
 }
-
+#page4{
+    background-color: #222;
+}
 #page4 .detail {
     padding: 25px;
 }
