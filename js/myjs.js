@@ -4,12 +4,6 @@ $(window).load(function () {
     $(".FullScreen").hide();
 });
 $(document).ready(function (e) {
-    //setTimeout(function () {
-    //    $(".FullScreen").hide();
-    //    $("nav,section").show();
-    //    $("#navbar-example").width($(window).width());
-    //    $('#page1 p').show();
-    //}, 3000);
     $("#navbar-example").width($(window).width());
     $(window).resize(function () {
         $("#navbar-example").width($(window).width()); //process here

@@ -6,14 +6,17 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
 /*nav{display: none}*/
 /*section{display: none}*/
 #navbar-example {
 
 }
-section h3{
+
+section h3 {
     display: none;
 }
+
 /* nav */
 #bs-example-navbar-collapse-1 li {
     text-align: center;
@@ -60,11 +63,12 @@ ul.img_list li img {
     overflow-x: hidden;
 }
 
-#Logo {
-    height: 180px;
-    width: 200px;
-    display: inline-block;
-
+.Block {
+    height: 100%;
+    padding-top: 120px;
+    color: #eee;
+    min-height: 400px;
+    overflow: hidden;
 }
 
 .FullScreen {
@@ -72,34 +76,26 @@ ul.img_list li img {
     height: 100%;
     width: 100%;
     position: fixed;
-    top:0px!important;
-    left: 0px!important;
+    top: 0px !important;
+    left: 0px !important;
     z-index: 2000;
     text-align: center;
 }
+
 .loading {
     height: 220px;
     width: 220px;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 20%;
     color: #eee;
     font-size: 50px;
     line-height: 150px;
     background: url("../images/loading-icon.gif");
 }
 
-.box {
+#page1 .box {
     background: url("../images/city.jpg");
     /*border-radius: 200px;*/
-}
-
-
-.Block {
-    height: 100%;
-    padding-top: 120px;
-    color: #eee;
-    min-height: 400px;
-    overflow: hidden;
 }
 
 #page1 p {
@@ -135,9 +131,11 @@ ul.img_list li img {
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
 }
+
 #page2 {
     background-color: #222;
 }
+
 #page2 p {
     display: none;
 }
@@ -190,8 +188,7 @@ ul.img_list li img {
     padding-bottom: 15px;
 }
 
-.banner ul {
-
+.banner {
 }
 
 .banner ul li {
@@ -204,12 +201,9 @@ ul.img_list li img {
     width: 10px;
     height: 10px;
     margin: 0 4px;
-
     text-indent: -999em;
-
     border: 2px solid #777;
     border-radius: 6px;
-
     cursor: pointer;
     opacity: .4;
 
@@ -229,7 +223,11 @@ ul.img_list li img {
     right: 0;
     bottom: 20px;
 }
-#page4 .row{display: none;}
+
+#page4 .row {
+    display: none;
+}
+
 .myicon-pink {
     text-align: center;
     height: 45px;
@@ -241,6 +239,7 @@ ul.img_list li img {
     z-index: 10;
     line-height: 200%;
 }
+
 .myicon-white {
     text-align: center;
     height: 45px;
@@ -277,9 +276,11 @@ ul.img_list li img {
     border-style: solid;
     border-color: #222 #FF6969 #222 #222;
 }
+
 .detail .row {
     padding-top: 32px;
 }
+
 .detail-sm .row {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -330,9 +331,11 @@ ul.img_list li img {
     border-style: solid;
     border-color: #222 #222 #222 #fff;
 }
-#page4{
+
+#page4 {
     background-color: #222;
 }
+
 #page4 .detail {
     padding: 25px;
 }
@@ -340,24 +343,27 @@ ul.img_list li img {
 #page4 .detail-sm {
     display: none;
 }
+
 #page5 {
-    height:auto;
+    height: auto;
 }
+
 #page5 .Block {
     padding-top: 16px;
 }
-#page5 .container{
+
+#page5 .container {
     padding-top: 50px;
 }
 
-#page5  .contact-box {
+#page5 .contact-box {
     margin: 0 auto;
     padding: 20px;
     background-color: #00aadd;
     width: 120px;
-    height:120px;
+    height: 120px;
     border-radius: 120px;
-text-align: center;
+    text-align: center;
     line-height: 100px;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -370,21 +376,25 @@ text-align: center;
     -o-transition: all 400ms ease-out 0s;
     transition: all 400ms ease-out 0s;
 }
-#page5 article{
+
+#page5 article {
     margin-bottom: 25px;
     display: none;
 }
-#page5  .contact-box:hover {
+
+#page5 .contact-box:hover {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
-#page5   .market{
+
+#page5 .market {
     font-size: 12px;
     margin-top: 16px;
 }
+
 .back-top {
     position: fixed;
     width: 50px;
@@ -397,12 +407,14 @@ text-align: center;
     border-radius: 50px;
     display: none;
 }
-footer{
-    padding-top:24px;
+
+footer {
+    padding-top: 24px;
     background-color: #333;
     color: #888;
     text-align: center;
 }
+
 .back-top:hover {
     border: solid 2px #00aadd;
 }
@@ -453,9 +465,11 @@ footer{
         float: none;
         width: auto;
     }
+
     #page4 .Block {
         padding-top: 20%;
     }
+
     .banner {
         display: none;
     }
