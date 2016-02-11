@@ -1,9 +1,8 @@
 (function ($) {
-    $("section").hide();
 })(jQuery);
 $(window).load(function () {
     $(".FullScreen").hide();
-    $("section").show();
+    $("body").css({"overflow-x":"auto"});
 });
 $(document).ready(function (e) {
     //setTimeout(function () {

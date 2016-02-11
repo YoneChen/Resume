@@ -4,7 +4,7 @@ body, html {
 
 body {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 /*nav{display: none}*/
 /*section{display: none}*/
