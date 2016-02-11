@@ -83,10 +83,10 @@ ul.img_list li img {
 }
 
 .loading {
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
     display: inline-block;
-    margin-top: 20%;
+    margin-top: 100px;
     color: #eee;
     font-size: 50px;
     line-height: 150px;
