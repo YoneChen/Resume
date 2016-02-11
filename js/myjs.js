@@ -1,8 +1,7 @@
 (function($){})(jQuery);
 $(document).ready(function (e) {
-    $("body").show();
     //setTimeout(function () {
-    //    $(".FullScreen").hide();
+        $(".FullScreen").hide();
     //    $("nav,section").show();
     //    $("#navbar-example").width($(window).width());
     //    $('#page1 p').show();
