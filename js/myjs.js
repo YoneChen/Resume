@@ -2,7 +2,6 @@
 })(jQuery);
 $(window).load(function () {
     $(".FullScreen").hide();
-    $("body").css({"overflow-x":"auto"});
 });
 $(document).ready(function (e) {
     //setTimeout(function () {
