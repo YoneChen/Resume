@@ -1,7 +1,11 @@
-(function($){})(jQuery);
+(function ($) {
+})(jQuery);
+$(window).load(function () {
+    $(".FullScreen").hide();
+});
 $(document).ready(function (e) {
     //setTimeout(function () {
-        $(".FullScreen").hide();
+    //    $(".FullScreen").hide();
     //    $("nav,section").show();
     //    $("#navbar-example").width($(window).width());
     //    $('#page1 p').show();
