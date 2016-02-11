@@ -1,7 +1,9 @@
 (function ($) {
+    $("section").hide();
 })(jQuery);
 $(window).load(function () {
     $(".FullScreen").hide();
+    $("section").show();
 });
 $(document).ready(function (e) {
     //setTimeout(function () {
