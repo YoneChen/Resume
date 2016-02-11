@@ -1,6 +1,5 @@
 (function($){})(jQuery);
 $(document).ready(function (e) {
-    $("body").show();
     //setTimeout(function () {
     //    $(".FullScreen").hide();
     //    $("nav,section").show();
