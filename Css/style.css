@@ -5,6 +5,7 @@ body, html {
 body {
     position: relative;
     overflow-x: hidden;
+    display: none;
 }
 /*nav{display: none}*/
 /*section{display: none}*/
@@ -452,7 +453,7 @@ footer{
         width: auto;
     }
     #page4 .Block {
-        padding-top: 25%;
+        padding-top: 20%;
     }
     .banner {
         display: none;
