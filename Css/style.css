@@ -22,9 +22,6 @@ section h3 {
     text-align: center;
 }
 
-#bs-example-navbar-collapse-1 li:hover {
-    background-color: #111;
-}
 
 #logo {
     display: inline-block;
