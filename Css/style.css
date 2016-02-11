@@ -67,23 +67,8 @@ ul.img_list li img {
 
 }
 
-#title {
-    height: auto;
-    width: 300px;
-    display: inline-block;
-    color: #eee;
-    font-size: 50px;
-    border: 2px solid #eee;
-    border-width: 2px 0px 2px 0px;
-}
-
-.box {
-    background: url("../images/city.jpg");
-    /*border-radius: 200px;*/
-}
-
 .FullScreen {
-    background-color: #333;
+    background-color: #3a3a3a;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -92,6 +77,22 @@ ul.img_list li img {
     z-index: 2000;
     text-align: center;
 }
+.loading {
+    height: 220px;
+    width: 220px;
+    display: inline-block;
+    margin-top: 100px;
+    color: #eee;
+    font-size: 50px;
+    line-height: 150px;
+    background: url("../images/loading-icon.gif");
+}
+
+.box {
+    background: url("../images/city.jpg");
+    /*border-radius: 200px;*/
+}
+
 
 .Block {
     height: 100%;
@@ -126,7 +127,7 @@ ul.img_list li img {
     transition-property: transform;
 }
 
-#myPhoto:hover {
+#page1 #myPhoto:hover {
     /* -webkit-transform: rotateY(180deg); */
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -262,6 +263,7 @@ ul.img_list li img {
     padding: 24px;
     display: inline-block;
     font-size: 13px;
+    text-align: left;
 }
 
 .send .arrow {
