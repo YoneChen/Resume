@@ -453,7 +453,10 @@ footer {
         height: 100px;
         width: 100px;
     }
-
+    #page2 p {
+        font-size: 16px;
+        font-weight: 200;
+    }
     #page3 {
         height: auto;
     }
@@ -495,6 +498,9 @@ footer {
         font-weight: 200;
     }
 
+    #page2 .keywords{
+        font-size: 20px;
+    }
     #page5 p {
         font-size: 12px;
         font-weight: 200;
