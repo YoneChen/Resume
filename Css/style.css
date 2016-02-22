@@ -69,7 +69,7 @@ ul.img_list li img {
 }
 
 .FullScreen {
-    background-color: #3a3a3a;
+    background-color: #333;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -78,18 +78,122 @@ ul.img_list li img {
     z-index: 2000;
     text-align: center;
 }
-
-.loading {
-    height: 220px;
-    width: 220px;
-    display: inline-block;
-    margin-top: 100px;
-    color: #eee;
-    font-size: 50px;
-    line-height: 150px;
-    background: url("../images/loading-icon.gif");
+@-webkit-keyframes myload1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
-
+@-webkit-keyframes myload2 {
+0%{
+    transform: scale(0.4);
+    opacity: 0.3;
+}
+    100%{
+        transform: scale(1);
+        opacity:1;
+    }
+}
+.loading {
+    width:75px;
+    height:75px;
+    position: relative;
+    top:25%;
+    margin: 0 auto;
+    left:25px;
+}
+.loading .i1{
+    display: block;
+    width:100%;
+    height:100%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background: linear-gradient(transparent  ,transparent 70% ,#00aadd 70%, #0099aa 100%);
+    -webkit-animation:myload1 0.6s infinite;
+    -o-animation:myload1 0.6s infinite;
+    animation:myload1 0.6s infinite;
+}
+.loading i{
+    display: block;
+    width:15px;
+    height:15px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-color: #00aadd;
+    position: absolute;
+    /*-webkit-animation:myload2 0.6s infinite;*/
+    /*-o-animation:myload2 0.6s infinite;*/
+    /*animation:myload2 0.6s infinite;*/
+}
+.loading i:nth-child(1){
+    top:25px;
+    left:0px;
+    -webkit-animation:myload2 1s ease 0s infinite;
+    -o-animation:myload2 1s ease 0s infinite;
+    animation:myload2 1s ease 0s infinite;
+}
+.loading i:nth-child(2){
+    top:17px;
+    left:17px;
+    -webkit-animation:myload2 1s ease -0.12s infinite;
+    -o-animation:myload2 1s ease -0.12s infinite;
+    animation:myload2 1s ease -0.12s infinite;
+}
+.loading i:nth-child(3){
+    top:0px;
+    left:25px;
+    -webkit-animation:myload2 1s ease -0.24s infinite;
+    -o-animation:myload2 1s ease -0.24s infinite;
+    animation:myload2 1s ease -0.24s infinite;
+}
+.loading i:nth-child(4){
+    top:-17px;
+    left:17px;
+    -webkit-animation:myload2 1s ease -0.36s infinite;
+    -o-animation:myload2 1s ease -0.36s infinite;
+    animation:myload2 1s ease -0.36s infinite;
+}
+.loading i:nth-child(5){
+    top:-25px;
+    left:0px;
+    -webkit-animation:myload2 1s ease -0.48s infinite;
+    -o-animation:myload2 1s ease -0.48s infinite;
+    animation:myload2 1s ease -0.48s infinite;
+}
+.loading i:nth-child(6){
+    top:-17px;
+    left:-17px;
+    -webkit-animation:myload2 1s ease -0.6s infinite;
+    -o-animation:myload2 1s ease -0.6s infinite;
+    animation:myload2 1s ease -0.6s infinite;
+}
+.loading i:nth-child(7){
+    top:0px;
+    left:-25px;
+    -webkit-animation:myload2 1s ease -0.72s infinite;
+    -o-animation:myload2 1s ease -0.72s infinite;
+    animation:myload2 1s ease -0.72s infinite;
+}
+.loading i:nth-child(8){
+    top:17px;
+    left:-17px;
+    -webkit-animation:myload2 1s ease -0.84s infinite;
+    -o-animation:myload2 1s ease -0.84s infinite;
+    animation:myload2 1s ease -0.84s infinite;
+}
 #page1 .box {
     background: url("../images/city.jpg");
     /*border-radius: 200px;*/
