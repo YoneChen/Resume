@@ -8,18 +8,6 @@ $(document).ready(function (e) {
     $(window).resize(function () {
         $("#navbar-example").width($(window).width()); //process here
     });
-    $(".exper-box, .back-top").hover(function () {
-            $(this).animate({
-                    backgroundColor: "#00aadd"
-                },
-                300);
-        },
-        function () {
-            $(this).animate({
-                    backgroundColor: "#303030"
-                },
-                300);
-        });
     $('.banner').unslider({
         speed: 500,               //  The speed to animate each slide (in milliseconds)
         delay: 3000,              //  The delay between slide animations (in milliseconds)
