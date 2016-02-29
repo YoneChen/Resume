@@ -80,10 +80,12 @@ ul.img_list li img {
 }
 @-webkit-keyframes myload2 {
 0%{
+    -webkit-transform: scale(0.4);
     transform: scale(0.4);
     opacity: 0.3;
 }
     100%{
+        -webkit-transform: scale(1);
         transform: scale(1);
         opacity:1;
     }
