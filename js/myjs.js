@@ -30,6 +30,12 @@ $(document).ready(function (e) {
         PageAniamtion(pre);
         // do something…
     })
+    $(".back-top").click(function(e){
+        e.preventDefault();
+        $(document.body).animate({scrollTop:0},800);
+    }
+
+    )
 })
 function PageAniamtion(liText) {
     switch (liText) {
