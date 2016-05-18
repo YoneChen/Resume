@@ -2,9 +2,9 @@
 })(jQuery);
 (function (win, $) {
     var init = function () {
-        window.onload(function(e) {
+        window.onload = function() {
             $(".FullScreen").fadeOut();    //图片加载完后隐藏加载页
-        });
+        };
         $("#navbar-example").width($(window).width());
         $(win).resize(function () {
             $("#navbar-example").width($(window).width()); //process here
