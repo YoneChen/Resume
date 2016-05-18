@@ -2,8 +2,8 @@
 })(jQuery);
 (function (win, $) {
     var init = function () {
-        $(document).ready(function (e) {
-            $(".FullScreen").hide();
+        window.onload(function(e) {
+            $(".FullScreen").fadeOut();    //图片加载完后隐藏加载页
         });
         $("#navbar-example").width($(window).width());
         $(win).resize(function () {
@@ -22,16 +22,17 @@
     };
     // 添加事件监听
     var handler = function () {
+        //返回顶部按钮点击事件
         $(".back-top").on("click", function (e) {
             e.preventDefault();
             $(document.body).animate({ scrollTop: 0 }, 800);
         });
+        //上下滚动事件监听
         $('#navbar-example').on('activate.bs.scrollspy', function () {
             var pre = $("#navbar-example li.active > a").text();
             if (pre != "About") $('.back-top').fadeIn();
             else $('.back-top').fadeOut();
-            PageAniamtion(pre);
-            // do something…
+            PageAniamtion(pre);//页面过场动画
         });
     };
     var PageAniamtion = function (liText) {
