@@ -7,12 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-/*nav{display: none}*/
-/*section{display: none}*/
-#navbar-example {
-
-}
-
 section h3 {
     display: none;
 }
@@ -21,7 +15,6 @@ section h3 {
 #bs-example-navbar-collapse-1 li {
     text-align: center;
 }
-
 
 #logo {
     display: inline-block;
