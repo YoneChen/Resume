@@ -39,17 +39,6 @@ ul.img_list li img {
     cursor: pointer
 }
 
-/*!* page *!*/
-/*.main {*/
-/*height: 100%;*/
-/*overflow-y:scroll;*/
-/*overflow-x: hidden;*/
-/*background-color:#333;*/
-/*text-align: center;*/
-/*z-index: -5;*/
-/*min-height: 500px*/
-/*}*/
-
 .Page {
     text-align: center;
     margin: 0 auto;
@@ -223,7 +212,10 @@ ul.img_list li img {
     margin: 15px;
     margin-left: -5px;
     margin-right: -5px;
-    border: solid 1px #eee;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #000;
     display: none;
     -webkit-transition: background-color 0.3s linear,border 0.3s linear;
     -moz-transition: background-color 0.3s linear,border 0.3s linear;
@@ -235,6 +227,7 @@ ul.img_list li img {
 .exper-box:hover {
     border: solid 1px #333;
     background-color: #00aadd;
+    color: #eee;
 }
 
 .exper-box h4 {
@@ -334,6 +327,7 @@ ul.img_list li img {
     display: inline-block;
     font-size: 13px;
     text-align: left;
+    box-shadow: 6px 6px 12px #000;
 }
 
 .send .arrow {
@@ -436,6 +430,7 @@ ul.img_list li img {
     border-radius: 120px;
     text-align: center;
     line-height: 100px;
+    box-shadow: -6px 6px 12px #000;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
@@ -475,6 +470,7 @@ ul.img_list li img {
     text-align: center;
     border: solid 2px #eee;
     border-radius: 50px;
+    box-shadow: 6px 6px 12px #000;
     display: none;
     transition: background-color 0.3s linear,border 0.3s linear;
 }
