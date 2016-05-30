@@ -2,14 +2,11 @@
 })(jQuery);
 (function (win, $) {
     var init = function () {
-        window.onload = function() {
-            $(".FullScreen").fadeOut();    //图片加载完后隐藏加载页
-        };
-        $("#navbar-example").width($(window).width());
-        $(win).resize(function () {
-            $("#navbar-example").width($(window).width()); //process here
-        });
-        $('.banner').unslider({
+        if(win.navigator.userAgent.indexOf('iphone')!=-1&&win.navigator.userAgent.indexOf('Android')!=-1){
+            $('.banner').html('').hide();
+        }else{
+            
+            $('.banner').unslider({
             speed: 500,               //  The speed to animate each slide (in milliseconds)
             delay: 3000,              //  The delay between slide animations (in milliseconds)
             complete: function () {
@@ -17,6 +14,14 @@
             keys: true,               //  Enable keyboard (left, right) arrow shortcuts
             dots: true,               //  Display dot navigation
             fluid: true              //  Support responsive design. May break non-responsive designs
+        });
+        }
+        window.onload = function() {
+            $(".FullScreen").fadeOut();    //图片加载完后隐藏加载页
+        };
+        $("#navbar-example").width($(window).width());
+        $(win).resize(function () {
+            $("#navbar-example").width($(window).width()); //process here
         });
         $('#navbar-example').scrollspy();
     };
@@ -38,33 +43,33 @@
     var PageAniamtion = function (liText) {
         switch (liText) {
             case 'About':
-                {
-                    $('#page1 p').show();
-                    break;
-                }
+            {
+                $('#page1 p').show();
+                break;
+            }
             case 'Skill':
-                {
-                    $('#page2 h3').show();
-                    $('#page2 p').show();
-                    break;
-                }
+            {
+                $('#page2 h3').show();
+                $('#page2 p').show();
+                break;
+            }
             case 'Experience':
-                {
-                    $('#page3 h3').show();
-                    $('#page3 .exper-box').show();
-                    break;
-                }
+            {
+                $('#page3 h3').show();
+                $('#page3 .exper-box').show();
+                break;
+            }
             case 'More':
-                {
-                    $('#page4 .row').show();
-                    break;
-                }
+            {
+                $('#page4 .row').show();
+                break;
+            }
             case 'Contact':
-                {
-                    $('#page5 h3').show();
-                    $('#page5 article').show();
-                    break;
-                }
+            {
+                $('#page5 h3').show();
+                $('#page5 article').show();
+                break;
+            }
         }
     };
     $(function () {

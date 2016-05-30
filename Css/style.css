@@ -429,14 +429,15 @@ ul.img_list li img {
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    -webkit-transition: all 400ms ease-out 0s;
-    -moz-transition: all 400ms ease-out 0s;
-    -o-transition: all 400ms ease-out 0s;
-    transition: all 400ms ease-out 0s;
+    -webkit-transition: transform 400ms ease-out 0s;
+    -moz-transition: transform 400ms ease-out 0s;
+    -o-transition: transform 400ms ease-out 0s;
+    transition: transform 400ms ease-out 0s;
 }
 
 #page5 article {
     margin-bottom: 25px;
+    perspective: 280px;
     display: none;
 }
 
